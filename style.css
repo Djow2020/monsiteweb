@@ -1,0 +1,334 @@
+
+/* CSS De inscription.html inscription */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.banner {
+  background-color: #4CAF50;
+  color: white;
+  padding: 38px;
+  text-align: center;
+}
+
+.banner h1 {
+  margin: 0;
+  animation: shake 5s infinite;
+}
+
+.logo {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 13px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.logo p {
+  font-size: 16px;
+  color: #666;
+}
+
+.logo form {
+  margin-top: 20px;
+}
+
+.logo input[type="text"],
+.logo input[type="email"],
+.logo input[type="tel"],
+.logo input[type="submit"],
+.logo select {
+  width: calc(100% - 5%);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.logo input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.logo input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.logo input[type="text"]:focus,
+.logo input[type="email"]:focus,
+.logo input[type="tel"]:focus,
+.logo input[type="submit"]:focus,
+.logo select:focus {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(-5px); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(-5px); }
+}
+
+.check-btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.check-btn:hover {
+  background-color: #45a049;
+}
+
+
+.check-btn-beta {
+  position: absolute; /* Positionnement absolu */
+  top: 0; /* Collé au haut de la page */
+  right: 0; /* Collé à droite de la page */
+  width: 80px;
+  height: 50px;
+  margin: 20px; /* Ajuster la marge selon les besoins */
+  background-color: #356c30;
+  color: white;
+  text-align: center; /* Centrer le texte horizontalement */
+  line-height: 50px;
+  border-radius: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.check-btn.beta {
+  background-color: #45a049;
+}
+
+/*CSS De la page  verification*/
+
+@keyframes moveLetters {
+  0%, 100% { transform: translateX(0); }
+  25%, 75% { transform: translateX(2px); }
+  50% { transform: translateX(-2px); }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.banner {
+  background-color: #4CAF50;
+  color: white;
+  padding: 2px;
+  text-align: center;
+}
+
+.banner h1 {
+  animation: moveLetters 4s infinite; /* Animation pour bouger les lettres */
+  animation-delay: 7s; /* Délai de 7 secondes avant le début de l'animation */
+}
+
+.logo {
+  width: 80%; /* Utilisation de pourcentage pour la largeur */
+  margin: 20px auto;
+  padding: 30px; /* Augmentation du padding pour plus d'espace autour du texte */
+  background-color: #fff;
+  border-radius: 13px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.logo p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Styles pour l'animation de scan */
+@keyframes scan {
+  0% { transform: scaleY(0); }
+  50% { transform: scaleY(1); }
+  100% { transform: scaleY(0); }
+}
+
+.loader {
+  margin: 60px auto;
+  width: 150px; /* Taille fixe pour l'animation de scan */
+  height: 150px; /* Taille fixe pour l'animation de scan */
+  border: 2px solid #3498db;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #3498db);
+  animation: scan 2s infinite;
+}
+
+/* Style de la page de LOGING connexion*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.banner {
+  background-color: #4CAF50;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.banner h1 {
+  margin: 0;
+  animation: shake 5s infinite;
+}
+
+.logo {
+  width: 70%;
+  margin: 35px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.logo p {
+  font-size: 16px;
+  color: #666;
+}
+
+.logo form {
+  margin-top: 20px;
+}
+
+.logo input[type="text"],
+.logo input[type="email"],
+.logo input[type="password"],
+.logo input[type="submit"],
+.logo select {
+  width: calc(100% - 5%);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.logo input[type="submit"] {
+  display: block;
+  width: 280px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.logo input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.logo input[type="text"]:focus,
+.logo input[type="email"]:focus,
+.logo input[type="password"]:focus,
+.logo input[type="submit"]:focus,
+.logo select:focus {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(-5px); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(-5px); }
+}
+
+.check-btn {
+  display: block;
+  width: 280px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: #000000d6;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.check-btn:hover {
+  background-color: #45a049;
+}
+
+.additional-links {
+  text-align: center;
+}
+
+.additional-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/*footer*/
+
+footer {
+  position: fixed; /* Fixe le footer */
+  bottom: 0; /* Fixe le footer en bas de la page */
+  width: 100%; /* Largeur maximale */
+  background-color: #f7f7f7; /* Couleur de fond */
+  text-align: center; /* Centrage du contenu */
+  padding: 20px 0; /* Espace autour du contenu */
+}
+
+footer p {
+  color: #666; /* Couleur du texte gris */
+  margin: 0; /* Supprimer les marges par défaut */
+  font-size: 12px; /* Taille du texte en pixels */
+}
+
